@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"defer></script>
+    <title>Portafolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo_nombre"> Fabian 
+            <span> Fernandez </span>
+        </a>
+        <i class="bi bi-list" id="menu__icon"></i>
+        <nav class="nav__bar">
+            <ul class="nav__menu">
+                <li class="menu__item"><a href="#inicio">Inicio</a></li>
+                <li class="menu__item"><a href="#sobre__mi">Sobre mi</a></li>
+                <li class="menu__item"><a href="#servicios">Servicios</a></li>
+                <li class="menu__item"><a href="#portafolio">Portafolio</a></li>
+                <li class="menu__item"><a href="#contacto">Contactame</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="inicio" id="inicio">
+        <div class="inicio__contenido">
+            <h1>Hola, soy <span> Fabian </span></h1>
+            <h3>Soy <span> Desarrollador Web</span> Junior</h3>
+            <p>con pasión por aprender y crear sitios web modernos. A pesar de estar empezando, ya tengo experiencia en HTML, CSS, JavaScript y bases de datos. Este portafolio muestra algunos de mis primeros proyectos mientras sigo mejorando mis habilidades y avanzando en mi carrera.
+            </p>
+        </div>
+        <div class="inicio_img">
+            <img src="multimedia/foto_perfil.jpg" alt="foto de perfil">
+        </div>
+    </section>
+    <section class="sobre__mi" id="sobre__mi">
+        <h2>Sobre <span> Mi </span></h2>
+        <div class="sobre__mi-contenido">
+            <P>Desarrollador web junior con conocimientos sólidos en tecnologías front-end y back-end, especializado en la creación de sitios web interactivos y dinámicos. Experiencia en el uso de HTML5, CSS3, JavaScript, y familiaridad con frameworks y bibliotecas como React y Node.js. Con capacidad para trabajar con bases de datos relacionales, especialmente PostgreSQL, y habilidades en el manejo de herramientas como Git para control de versiones.
+            Orientado a resolver problemas y mejorar continuamente las habilidades técnicas. Me apasiona crear interfaces de usuario eficientes y atractivas, y contribuir a proyectos colaborativos que impulsen la innovación y el rendimiento.</P>
+            <button class="btn"  >
+                <a href="#educacion" id="leer-mas">Leer más</a>
+            </button>
+        </div>
+        <div class="educacion" id="educacion">
+            <h2>Educación</h2>
+            <ul class="educacion__list">
+                <li class="educacion__item">Tecnologo en produccion de multimedia SENA - (2022 - 2024)</li>
+                <li class="educacion__item">Bootcamp Desarrollador web development Nivel Basico - TALENTOTECH (2024)</li>
+            </ul>
+        </div>
+    </section>
+    <section class="servicios" id="servicios">
+        <h2 class="titulo__servicios">Servicios</h2>
+        <div class="slider__contenedor">
+            <div class="slider__box">
+                <div class="servicios__contenedor">
+                    <div class="servicios__info">
+                        <i class="bi bi-phone-flip"></i>
+                        <h4>Mobile App Development</h4>
+                        <p>Desarrollo aplicaciones móviles personalizadas para iOS y Android, optimizadas para ofrecer una experiencia fluida y de alto rendimiento. Desde el diseño hasta la implementación, garantizo soluciones eficientes adaptadas a las necesidades de tu negocio.</p>
+                    </div>
+                    <div class="servicios__info">
+                        <i class="bi bi-code"></i>
+                        <h4>Frontend Development</h4>
+                        <p>Ofrezco desarrollo front-end con un enfoque en crear interfaces de usuario interactivas y responsivas. Utilizo tecnologías modernas como HTML5, CSS3 y JavaScript para diseñar sitios web visualmente atractivos, optimizados para todo tipo de dispositivos y orientados a ofrecer una experiencia de usuario impecable.</p>
+                    </div>
+                    <div class="servicios__info">
+                        <i class="bi bi-pc-display"></i>
+                        <h4>Mantenimiento y Soporte Web</h4>
+                        <p>Ofrezco servicios de mantenimiento y soporte web continuo para asegurar que tu sitio funcione sin problemas. Me encargo de actualizaciones, resolución de errores y optimización, garantizando que tu sitio esté siempre seguro y actualizado.</p>
+                    </div>
+                    <div class="servicios__info">
+                        <i class="bi bi-database-fill-gear"></i>
+                        <h4>Integración de API</h4>
+                        <p>Ofrezco servicios de integración de API para conectar tu sitio web con aplicaciones y servicios de terceros. Ya sea para pagos, redes sociales, o servicios personalizados, desarrollo soluciones que permitan una comunicación fluida entre tu sitio y plataformas externas, optimizando la funcionalidad y la experiencia del usuario.</p>
+                    </div>
+                </div>        
+                <button class="prev">&larr;</button>
+                <button class="next">&rarr;</button>
+            </div> 
+        </div>    
+    </section>
+    <section class="portafolio" id="portafolio">
+        <div class="titulo__portafolio">
+            <h2>Mi <span>Portafolio</span></h2>
+        </div>
+        <div class="contenido__portafolio">
+            <div class="proyecto">
+                <img src="multimedia/portafolio-1.jpg" alt="">
+                <div class="proyecto__box">
+                    <div class="proyecto__text">
+                        <h5>Website Design</h5>
+                    </div>
+                    <div class="proyecto__icono">
+                        <i class="bi bi-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development For Node</h4>
+            </div>
+            <div class="proyecto">
+                <img src="multimedia/portafolio-2.jpg" alt="">
+                <div class="proyecto__box">
+                    <div class="proyecto__text">
+                        <h5>Website Design for node</h5>
+                    </div>
+                    <div class="proyecto__icono">
+                        <i class="bi bi-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development For Mobile app</h4>
+            </div>
+            <div class="proyecto">
+                <img src="multimedia/portafolio-3.jpg" alt="">
+                <div class="proyecto__box">
+                    <div class="proyecto__text">
+                        <h5>Website Design</h5>
+                    </div>
+                    <div class="proyecto__icono">
+                        <i class="bi bi-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development For Bitcloud</h4>
+            </div>
+            <div class="proyecto">
+                <img src="multimedia/portafolio-4.jpg" alt="">
+                <div class="proyecto__box">
+                    <div class="proyecto__text">
+                        <h5>Website Design</h5>
+                    </div>
+                    <div class="proyecto__icono">
+                        <i class="bi bi-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development For Lancer Work</h4>
+            </div>
+            <div class="proyecto">
+                <img src="multimedia/portafolio-5.jpg" alt="">
+                <div class="proyecto__box">
+                    <div class="proyecto__text">
+                        <h5>Website Design</h5>
+                    </div>
+                    <div class="proyecto__icono">
+                        <i class="bi bi-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development For Digital Graphic</h4>
+            </div>
+            <div class="proyecto">
+                <img src="multimedia/portafolio-6.jpg" alt="">
+                <div class="proyecto__box">
+                    <div class="proyecto__text">
+                        <h5>Website Design</h5>
+                    </div>
+                    <div class="proyecto__icono">
+                        <i class="bi bi-github"></i>
+                    </div>
+                </div>
+                <h4>Website Development For Send Unit</h4>
+            </div>
+        </div>
+    </section>
+    <section class="contacto" id="contacto">
+        <h2 class="titulo__Contacto">Contacto</h2>
+        <div class="contacto__conten">
+            <form class="formulario"    action="Contacto">
+                <h5>Consulta Clientes</h5>
+                <div class="formulario__cliente">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                    <input type="email" placeholder="Email">
+                    <input type="number" placeholder="Telefono">
+                    <input type="text" placeholder="Empresa">
+                    <input type="text" placeholder="Cargo">
+                </div>
+                <div class="formulario__consulta">
+                    <label for="Servicios">Selecciona un Servicio</label>
+                    <select name="Servicios" id="opciones__servicios">
+                        <option value="Opcion 1">Mobile App Development</option>
+                        <option value="Opcion 2">Frontend Development</option>
+                        <option value="Opcion 3">Mantenimiento y Soporte Web</option>
+                        <option value="OPcion 4">Integración de API</option>
+                    </select>
+                    <textarea name="Consulta" id="descripcion_consulta" placeholder="Escribe aqui tu consulta sobre el servicio requerido" required></textarea>
+                </div>
+                <input type="submit" value="Envia tu mensaje" class="btn">
+            </form>
+            <div class="contacto__info">
+                <h5>Datos de Contacto</h5>
+                <div class="telefono">
+                    <i class="bi bi-telephone-fill"></i>
+                    <p>3505025745</p>
+                </div>
+                <div class="mail">
+                    <i class="bi bi-envelope-paper-fill"></i>
+                    <a href="mailto:fabianfernandezg@outlook.com" class="mailto">fabianfernandezg@outlook.com</a>
+                </div>
+                <div class="mapa_ubicacion">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57873.950783189226!2d-74.04593771322864!3d4.711177097371826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1727223393420!5m2!1ses-419!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="authModal" class="modal">
+            <div class="modal-content">
+                <div class="tab">
+                    <div>
+                        <button class="tablinks modal-tab" onclick="openForm(event, 'loginForm')">Iniciar Sesión</button>
+                        <button class="tablinks modal-tab" onclick="openForm(event, 'registerForm')">Registrarse</button>
+                    </div>
+                    <span class="closeBtn">&times;</span>
+                </div>
+                <div id="loginForm" class="form-content">
+                    <h2>Ingresar</h2>
+                    <form action="/login" method="POST">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="loginEmail" name="email" required>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="loginPassword" name="password" required>
+                        <button type="submit" class="modal-btn">Ingresar</button>
+                    </form>
+                </div>
+                <div id="registerForm" class="form-content">
+                    <h2>Registrarse</h2>
+                    <form action="/register" method="POST">
+                        <label for="username">Nombre de Usuario:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="registerEmail" name="email" required>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="registerPassword" name="password" required>
+                        <button type="submit" class="modal-btn">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="openModalBtn">
+            <button class="btn" id="openModalBtn">Iniciar sesión / Registrarse</button>            
+        </div>
+    </section>       
+    <footer class="footer">
+        <div class="social__icons">
+            <a href="#">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+        </div>
+        <P class="copyright">
+            © Fabian Fernandez | All Rights Reserved
+        </P>
+    </footer>
+</body>
+</html>
