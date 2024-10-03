@@ -361,9 +361,11 @@ button.next {
     position: relative;
 }
 
-.formulario {
-    width: 50%;
-    order: 2;
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40%;
 }
 
 .formulario__cliente, .formulario__consulta {
@@ -569,8 +571,8 @@ textarea {
     color: #ffffff;
 }
 
-#loginEmail, #loginPassword, 
-#username, #registerEmail, 
+#username, #password, 
+#new__username, #registerEmail, 
 #registerPassword {
     width: 100%;
     padding: 10px;
@@ -588,6 +590,18 @@ textarea {
     text-align: center;
     transform: translateX(-50%);
     padding: 5px;
+}
+
+#loginMessage {
+    font-size: 5rem;
+}
+
+#registerMessage{
+    font-size: 5rem;
+}
+
+#formMessage, #consultaMessage {
+    font-size: 3rem;
 }
 
 .footer {

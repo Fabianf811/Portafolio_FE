@@ -70,7 +70,7 @@ window.onclick = function(event) {
 
 function openForm(evt, formName) {
     var i, formContent, tablinks;
-    formContent = document.getElementsByClassName("form-content");
+    formContent = document.getElementsByClassName("form_content");
     for (i = 0; i < formContent.length; i++) {
         formContent[i].style.display = "none";
     }
@@ -83,4 +83,3 @@ function openForm(evt, formName) {
 }
 
 document.getElementById("defaultOpen").click();
-
