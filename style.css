@@ -617,6 +617,37 @@ textarea {
     align-items: center;
 }
 
+.dashboardMain{
+    border: solid 3px #e1efee;
+}
+.dashboardMain p, h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.Usuarios table {
+    width: 100%;
+}
+
+.clientes table {
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 3px solid #ee1745;
+    font-size: 1.5rem;
+}
+
+th {
+    background-color: #17eebf;
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+}
+
+
 /*----------------------media queries----------------------*/
 
 @media (max-width: 768px) {
