@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 async function loadUsuarios() {
+    const apiUrl = 'https://portafolio-zeta-rosy.vercel.app';
     try {
-        const response = await fetch('http://localhost:3000/usuarios', {
+        const response = await fetch(`${apiUrl}/usuarios`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
