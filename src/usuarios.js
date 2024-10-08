@@ -35,9 +35,19 @@ async function loadUsuarios() {
             const emailCell = document.createElement('td');
             emailCell.textContent = usuario.email;
 
+            const deleteCell = document.createElement('td');
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Eliminar';
+            deleteButton.classList.add('borrar_usuario');
+
+            deleteButton.addEventListener('click', () => eliminarUsuario(usuario.id_usuario));
+
+            deleteCell.appendChild(deleteButton);
+
             row.appendChild(idCell);
             row.appendChild(nameCell);
             row.appendChild(emailCell);
+            row.appendChild(deleteCell);
 
             tableBody.appendChild(row);
         });

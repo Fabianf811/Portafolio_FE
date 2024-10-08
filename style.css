@@ -625,8 +625,14 @@ textarea {
     text-align: center;
 }
 
+.Usuarios{
+    border: #17eebf solid;
+}
+
 .Usuarios table {
     width: 100%;
+    margin-top: 20px;
+    border: #17eebf solid;
 }
 
 .clientes table {
@@ -647,6 +653,15 @@ th {
     color: #000000;
 }
 
+.borrar_usuario{
+    background-color: #ee1745;
+    color: #0b0b17;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 3rem;
+    font-weight: 600;
+}
 
 /*----------------------media queries----------------------*/
 
