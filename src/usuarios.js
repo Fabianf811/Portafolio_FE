@@ -6,54 +6,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 });
 
-async function loadUsuarios() {
-    const apiUrl = 'https://portafolio-zeta-rosy.vercel.app';
+async function eliminarUsuario(id_usuario) {
+    const apiUrl = 'https://portafolio-zeta-rosy.vercel.app';  // URL de tu API en Vercel
     try {
-        const response = await fetch(`${apiUrl}/usuarios`, {
-            method: 'GET',
+        const response = await fetch(`${apiUrl}/deleteUsuarios/${id_usuario}`, {  // Asegúrate que aquí la URL coincide
+            method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
-            },
+            }
         });
 
-        const usuarios = await response.json();
-        console.log(usuarios);
-
-        const tableBody = document.getElementById('usuariosTbody');
-        tableBody.innerHTML = '';
-
-        usuarios.forEach(usuario => {
-            const row = document.createElement('tr');
-
-            const idCell = document.createElement('td');
-            idCell.textContent = usuario.id_usuario;
-
-
-            const nameCell = document.createElement('td');
-            nameCell.textContent = usuario.nombre_usuario;
-
-
-            const emailCell = document.createElement('td');
-            emailCell.textContent = usuario.email;
-
-            const deleteCell = document.createElement('td');
-            const deleteButton = document.createElement('button');
-            deleteButton.textContent = 'Eliminar';
-            deleteButton.classList.add('borrar_usuario');
-
-            deleteButton.addEventListener('click', () => eliminarUsuario(usuario.id_usuario));
-
-            deleteCell.appendChild(deleteButton);
-
-            row.appendChild(idCell);
-            row.appendChild(nameCell);
-            row.appendChild(emailCell);
-            row.appendChild(deleteCell);
-
-            tableBody.appendChild(row);
-        });
-
+        if (response.ok) {
+            alert('Usuario eliminado con éxito');
+            loadUsuarios();  // Recargar la lista de usuarios después de la eliminación
+        } else {
+            alert('No se pudo eliminar el usuario');
+        }
     } catch (error) {
-        console.error(error);
+        console.error('Error al eliminar el usuario:', error);
+        alert('Error al intentar eliminar el usuario');
     }
 }

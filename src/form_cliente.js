@@ -64,7 +64,7 @@ window.addEventListener('load', () => {
             const consulta = document.getElementById('descripcion_consulta').value;
 
             try {
-                const response = await fetch('http://localhost:3000/createClienteConsulta', {
+                const response = await fetch('https://portafolio-zeta-rosy.vercel.app/createClienteConsulta', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

@@ -782,7 +782,7 @@ th {
     box-shadow: 0 4px 8px rgba(208, 198, 198, 0.3);
 }
 
-.contacto__info {
+.contacto__info, .contacto__form{
     width: 100%;
         max-width: 400px;
         text-align: center;

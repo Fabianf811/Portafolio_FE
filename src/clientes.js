@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 async function loadClientes() {
     try {
-        const response = await fetch('http://localhost:3000/clientes', {
+        const response = await fetch('https://portafolio-zeta-rosy.vercel.app/clientes', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
